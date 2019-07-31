@@ -1,5 +1,5 @@
 import React from 'react'
-import "../Navbar/Navbar.sass"
+import "./Navbar.sass"
 import logo from "../../logo.png"
 
 export default function Navbar() {
