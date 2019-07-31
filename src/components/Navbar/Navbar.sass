@@ -1,0 +1,25 @@
+@import '../../index.sass' //для работы с переменными
+
+.navbar
+ padding: 0.5rem 1rem
+ display: grid
+ grid-template-columns: auto 1fr
+ background-color: $mainBlack
+
+.nav-link
+ color: $mainGrey
+ text-transform: capitalize
+ text-decoration: none
+ font-style: 1.2rem
+ transition: all 0.3s linear
+ &:hover
+  color: $mainGreen
+ &s
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  align-self: center
+  text-align: center
+  list-style-type: none
+
+.active
+ color: $mainGreen
