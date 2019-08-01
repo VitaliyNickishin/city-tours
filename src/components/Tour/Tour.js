@@ -7,7 +7,7 @@ export default class Tour extends Component {
    <article className="tour">
     <div className="img-container">
      <img
-      src="https://images.pexels.com/photos/1157255/pexels-photo-1157255.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" 
+      src="https://images.pexels.com/photos/2614854/pexels-photo-2614854.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" 
       alt=""
      />
      <span className="close-btn">
