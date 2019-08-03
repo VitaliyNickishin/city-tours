@@ -6,7 +6,7 @@ export default class Tour extends Component {
   state = {
     showInfo: false
   }
-
+  //картетка открывающая инфо
   handleInfo = () => {
     this.setState({
       showInfo: !this.state.showInfo
@@ -14,8 +14,8 @@ export default class Tour extends Component {
   }
   
   render() {
-  const {city,img,name,info} = this.props.item
-
+  const {id,city,img,name,info} = this.props.item
+  const {deleteTour} = this.props
   return (
    <article className="tour">
     <div className="img-container">
@@ -23,7 +23,8 @@ export default class Tour extends Component {
       src={img} 
       alt=""
      />
-     <span className="close-btn">
+     {/* <span className="close-btn" onClick={deleteTour.bind(null, id)}> */}
+     <span className="close-btn" onClick={() => {deleteTour(id)}}>
       <i className="fas fa-window-close"></i>
      </span>
      </div>
